@@ -1,0 +1,33 @@
+{
+  "name": "covid-timelapse-data",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node index.js",
+    "lint": "./node_modules/.bin/eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kentr/covid-timelapse-data.git"
+  },
+  "author": "Kent Richards",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/kentr/covid-timelapse-data/issues"
+  },
+  "homepage": "https://github.com/kentr/covid-timelapse-data#readme",
+  "devDependencies": {
+    "d3-array": "^3.2.0",
+    "d3-fetch": "^3.0.1",
+    "eslint": "^8.21.0",
+    "node-fetch": "^3.2.10"
+  },
+  "dependencies": {
+    "d3-dsv": "^3.0.1",
+    "d3-time": "^3.0.0"
+  }
+}
