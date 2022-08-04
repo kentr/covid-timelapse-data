@@ -1,18 +1,16 @@
-# @todo Delete or integrate this workflow.
-name: Build
-on: [push]
+name: Update data files
+on:
+  schedule:
+    # Every day @ midnight.
+    - cron: "0 0 * * *"
 jobs:
   main:
+    name: Update data files
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository code
-        uses: actions/checkout@v3
-      - name: Setup Node
-        uses: actions/setup-node@v3
+      - uses: kentr/actions/checkout-setup-node@main
         with:
-          node-version: '16.x'
-      - name: Install
-        run: npm ci
+          node-version: "16"
       - name: Build
         run: npm run build
       - name: Commit results
